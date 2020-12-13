@@ -2,7 +2,12 @@
   <div class="v-catalog">
     <h1>Catalog</h1>
     <div class="v-catalog__list">
-      <v-catalog-item v-for="product in products" :key="product.article" :product_data="product"/>
+      <v-catalog-item
+        v-for="product in products"
+        :key="product.article"
+        :product_data="product"
+        @sendArticle="swohArticleFromChildInConsole"
+      />
     </div>
   </div>
 </template>
@@ -60,7 +65,7 @@ export default {
           category: "Женские",
         },
         {
-          image: "6.jpg",
+          image: "6.jpeg",
           name: "T-shirt 6",
           price: 8700.4124123,
           article: "T6",
@@ -70,7 +75,11 @@ export default {
       ],
     };
   },
-  computed: {},
+  methods: {
+    swohArticleFromChildInConsole(data) {
+      console.log(data);
+    },
+  },
 };
 </script>
 
