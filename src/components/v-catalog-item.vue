@@ -44,8 +44,14 @@
     padding: 16px;
     margin-bottom: 16px;
   }
-  .v-catalog-item img{
+  .v-catalog-item img {
     max-width: 150px;
     max-height: 150px;
+  }
+  .v-catalog-item button {
+    padding:10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 </style>
