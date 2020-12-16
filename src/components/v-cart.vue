@@ -6,7 +6,7 @@
         Back to catalog:
       </div>
     </router-link>
-    <p v-if="!cart_data.length">In your Cart nothing.. Please add some product in your Cart</p>
+    <p v-if="!cart_data.length">In your Cart nothing.. Please add some product in your cart</p>
     <v-cart-item
         v-for="(item, index) in cart_data"
         :key="item.article"

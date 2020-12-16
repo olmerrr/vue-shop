@@ -12,15 +12,23 @@ import {mapGetters} from 'vuex';
 
 export default {
   name: 'v-main-wrapper',
+
   props: {},
   data() {
     return {
       title: 'Main wrapper'
     }
   },
-  computed: {},
+  computed: {
+    ...mapGetters([
+      'CART'
+    ])
+  },
   methods: {},
   watch: {},
+  mounted() {
+    console.log('Hello i am alive!')
+  }
 }
 </script>
 
