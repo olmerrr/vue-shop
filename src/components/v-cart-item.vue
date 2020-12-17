@@ -8,7 +8,9 @@
       <p>{{ cart_item_data.article }}</p>
     </div>
     <div class="v-cart-item__quantity">
-      <p>Qty: {{ cart_item_data.quantity }}</p>
+      <span>
+        Qty: {{ cart_item_data.quantity }}
+      </span>
       <button @click="deleteFromCart">Delete</button>
     </div>
   </div>
