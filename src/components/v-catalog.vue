@@ -2,8 +2,8 @@
   <div class="v-catalog">
     <h1>Catalog</h1>
     <router-link :to="{name: 'cart', params: { cart_data: CART } }">
-      <div class="v-catalog__link-to-cart">
-        Cart: {{ CART.length }}
+      <div class="v-catalog__link-to-cart"  v-if="CART.length">
+        Add to Cart: {{ CART.length }}
       </div>
     </router-link>
     <div class="v-catalog__list">
